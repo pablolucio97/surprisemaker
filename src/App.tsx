@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsGift } from "react-icons/bs";
-import { FaKey } from "react-icons/fa6";
+import { FaKey, FaHeart } from "react-icons/fa6";
 import Button from "./components/Button";
 import { TextInput } from "./components/TextInput";
 
@@ -89,6 +89,7 @@ function App() {
           )}
         </>
       )}
+      <span className="flex mx-auto mt-56">Desenvolvido com <FaHeart className="mt-1 text-pink-500 mx-1" /> por Pablo Silva</span>
     </main>
   );
 }
