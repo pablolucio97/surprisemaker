@@ -51,7 +51,7 @@ function App() {
             Parabéns por encontrar o código!
           </h2>
           <span className="text-md text-center mt-2 text-gray-700">
-            A chave se encontrar no fundo da primeira gaveta do criado-mudo.
+            A chave se encontra no fundo da primeira gaveta do criado-mudo.
           </span>
           <FaKey className="w-16 h-16 animate-pulse text-orange-300 mt-6" />
         </div>
