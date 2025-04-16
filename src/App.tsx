@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./components/Button";
 import { TextInput } from "./components/TextInput";
 
 function App() {
@@ -29,8 +30,11 @@ function App() {
           <li>Talvez seja necessário abrir algo.</li>
         </ul>
       </div>
-      <div className="w-full flex flex-col items-center mt-10 max-w-[320px] mx-auto animate-pulse">
+      <div className="w-full flex flex-col items-center mt-4 max-w-[320px] mx-auto animate-pulse">
         <TextInput inputLabel="Informe o código" placeholder="Informe o código encontrado" />
+      </div>
+      <div className="w-full flex flex-col items-center mt-2 max-w-[320px] mx-auto">
+        <Button title="Confirmar código"/>
       </div>
     </main>
   );
