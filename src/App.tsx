@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [code, setCode] = useState("");
+  const [isCodeValid, setIsCodeValid] = useState(false);
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main className="w-full flex flex-col">
+      <div className="w-full flex flex-col items-center mt-10">
+        <h1 className="text-center text-lg font-bold">Surprise Maker</h1>
+        <span className="text-sm text-center">
+          Você possui uma surpresa lhe aguardando dentro do guarda-roupas que
+          está no quartinho (antigo escritório) que encontra-se trancado.
+          <br />
+          Para acessar você precisa encontrar a chave do quartinho, porém para
+          saber onde a chave está você precisa encontrar o papel que contém o
+          código que precisa ser inserido nesta aplicação para poder informar
+          onde a chave está.
+        </span>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
